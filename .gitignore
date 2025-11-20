@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.idea
+.vscode
+.env
+.parcel-cache
+static/configs
+bkp*
+tmp_config
