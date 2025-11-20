@@ -1,0 +1,1 @@
+{"version":3,"file":"_interfaces.d.ts","sourceRoot":"","sources":["../../../src/requests/roomGroup/_interfaces.ts"],"names":[],"mappings":"AAyBA,MAAM,WAAW,SAAS;IACxB,SAAS,EAAE,MAAM,CAAC;IAClB,QAAQ,EAAE,MAAM,CAAC;IACjB,IAAI,EAAE,MAAM,CAAC;IACb,IAAI,EAAE,MAAM,CAAC;CACd;AAED,MAAM,MAAM,aAAa,GAAG,SAAS,EAAE,CAAC"}

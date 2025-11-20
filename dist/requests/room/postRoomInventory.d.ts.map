@@ -1,0 +1,1 @@
+{"version":3,"file":"postRoomInventory.d.ts","sourceRoot":"","sources":["../../../src/requests/room/postRoomInventory.ts"],"names":[],"mappings":"AAEA,wBAAsB,iBAAiB,CACrC,UAAU,EAAE,MAAM,EAClB,EAAE,EAAE,MAAM,EACV,IAAI,EAAE;IAAE,OAAO,EAAE,MAAM,CAAC;IAAC,QAAQ,EAAE,MAAM,CAAC;IAAC,MAAM,EAAE,EAAE,CAAA;CAAE,EACvD,OAAO,EAAE,GAAG,GACX,OAAO,CAAC,GAAG,CAAC,CAed"}

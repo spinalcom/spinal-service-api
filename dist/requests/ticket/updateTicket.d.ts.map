@@ -1,0 +1,1 @@
+{"version":3,"file":"updateTicket.d.ts","sourceRoot":"","sources":["../../../src/requests/ticket/updateTicket.ts"],"names":[],"mappings":"AAEA,wBAAsB,aAAa,CAAC,QAAQ,EAAE,MAAM,EAAE,QAAQ,EAAE,MAAM,EAClE,IAAI,EAAE;IACF,IAAI,EAAE,MAAM,GAAG,IAAI,CAAC;IACpB,WAAW,EAAE,MAAM,GAAG,IAAI,CAAC;IAC3B,QAAQ,EAAE,MAAM,GAAG,IAAI,CAAC;CAC3B,gBASJ"}

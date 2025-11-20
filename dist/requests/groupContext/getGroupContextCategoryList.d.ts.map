@@ -1,0 +1,1 @@
+{"version":3,"file":"getGroupContextCategoryList.d.ts","sourceRoot":"","sources":["../../../src/requests/groupContext/getGroupContextCategoryList.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,mBAAmB,EAAE,MAAM,eAAe,CAAC;AAEpD,wBAAsB,2BAA2B,CAAC,YAAY,EAAE,MAAM,EAAE,UAAU,EAAE,MAAM,EAAE,YAAY,EAAE,MAAM,GAAG,OAAO,CAAC,mBAAmB,EAAE,CAAC,CAShJ"}
