@@ -4,6 +4,7 @@
   "description": "",
   "license": "ISC",
   "author": "",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -15,9 +16,14 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "axios": "^1.12.2"
+    "axios": "^1.12.2",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
+    "@types/lodash": "^4.17.21",
+    "@types/lodash-es": "^4.17.12",
     "@types/node": "^24.6.0",
     "typescript": "^5.9.2"
   },

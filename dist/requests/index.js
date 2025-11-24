@@ -25,6 +25,7 @@ export * from "./room/getRoomRefenceObjectsList";
 export * from "./room/getRoomPosition";
 //MARK: Equipment:
 export * from "./equipment/postEquipmentPositionMultiple";
+export * from "./equipment/posts/ReadStaticDetailsMultiple";
 //MARK: equipmentsGroup
 export * from "./equipmentsGroup/getEquipmentGroupList";
 export * from "./equipmentsGroup/getEquipmentGroupCategoryList";
