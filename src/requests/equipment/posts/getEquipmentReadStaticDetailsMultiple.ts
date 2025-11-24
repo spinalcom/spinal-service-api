@@ -10,7 +10,7 @@ import { IReadStaticDetailsMultiple } from "../../../interfaces/IGeneral";
 import chunk  from "lodash.chunk";
 import { SpinalAPI } from "../../../spinalAPI"; // chemin relatif à src/requests/building
 
-export default async function getReadStaticDetailsMultiple(buildingId: string, dynamicIds: number[], size: number = 200) : Promise<IReadStaticDetailsMultiple[]> { 
+export async function getEquipmentReadStaticDetailsMultiple(buildingId: string, dynamicIds: number[], size: number = 200) : Promise<IReadStaticDetailsMultiple[]> { 
     const spinalAPI = SpinalAPI.getInstance();
     const url = spinalAPI.createUrlWithPlatformId(
         buildingId,

@@ -4,4 +4,4 @@
  *
  */
 import { IReadStaticDetailsMultiple } from "../../../interfaces/IGeneral";
-export default function getReadStaticDetailsMultiple(buildingId: string, dynamicIds: number[], size?: number): Promise<IReadStaticDetailsMultiple[]>;
+export declare function getRoomReadStaticDetailsMultiple(buildingId: string, dynamicIds: number[], size?: number): Promise<IReadStaticDetailsMultiple[]>;
