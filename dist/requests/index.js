@@ -41,13 +41,8 @@ __exportStar(require("./room/getRoomRefenceObjectsList"), exports);
 __exportStar(require("./room/getRoomPosition"), exports);
 __exportStar(require("./room/posts/getRoomReadStaticDetailsMultiple"), exports);
 //MARK: Equipment:
-<<<<<<< HEAD
-export * from "./equipment/postEquipmentPositionMultiple";
-export * from "./equipment/posts/ReadStaticDetailsMultiple";
-=======
 __exportStar(require("./equipment/postEquipmentPositionMultiple"), exports);
 __exportStar(require("./equipment/posts/getEquipmentReadStaticDetailsMultiple"), exports);
->>>>>>> 4c96306 (Ajout des requête ReadStaticDetails (room, equipment))
 //MARK: equipmentsGroup
 __exportStar(require("./equipmentsGroup/getEquipmentGroupList"), exports);
 __exportStar(require("./equipmentsGroup/getEquipmentGroupCategoryList"), exports);
