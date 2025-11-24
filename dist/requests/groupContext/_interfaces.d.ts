@@ -9,4 +9,3 @@ export interface IGroupingItem extends INodeItem {
     icon?: string;
 }
 export type IGroupingItemObject = IGroupingItem[];
-//# sourceMappingURL=_interfaces.d.ts.map

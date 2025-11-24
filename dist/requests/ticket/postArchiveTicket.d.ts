@@ -2,4 +2,3 @@ export declare function postArchiveTicket(building: string, ticketId: string, da
     workflowDynamicId: number;
     processDynamicId: number;
 }): Promise<any>;
-//# sourceMappingURL=postArchiveTicket.d.ts.map

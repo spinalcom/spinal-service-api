@@ -2,4 +2,3 @@ export declare function moveToStepTicket(building: string, ticketId: string, dat
     workflowDynamicId: number;
     toStepName: string;
 }): Promise<any>;
-//# sourceMappingURL=postMoveToStepTicket.d.ts.map

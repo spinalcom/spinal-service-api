@@ -15,4 +15,3 @@ interface IObjectItem extends INodeItem {
 export type IEquipementsGroup = IGroupingItem[];
 export type IEquipementsGroupObject = IObjectItem[];
 export {};
-//# sourceMappingURL=_interfaces.d.ts.map

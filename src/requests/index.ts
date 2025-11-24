@@ -29,11 +29,12 @@ export * from "./room/postRoomInventory";
 export * from "./room/getRoomEquipmentList";
 export * from "./room/getRoomRefenceObjectsList";
 export * from "./room/getRoomPosition";
+export * from "./room/posts/getRoomReadStaticDetailsMultiple";
 
 
 //MARK: Equipment:
 export * from "./equipment/postEquipmentPositionMultiple";
-export * from "./equipment/posts/ReadStaticDetailsMultiple";
+export * from "./equipment/posts/getEquipmentReadStaticDetailsMultiple";
 
 //MARK: equipmentsGroup
 export * from "./equipmentsGroup/getEquipmentGroupList";

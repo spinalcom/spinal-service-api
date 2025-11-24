@@ -5,4 +5,3 @@ export interface INodeItem {
     type: string;
 }
 export type INodeItemList = INodeItem[];
-//# sourceMappingURL=_interfaces.d.ts.map

@@ -3,4 +3,3 @@ export declare function postFloorInventory(id: number, body: {
     category: string;
     groups: any;
 }, options: any): Promise<any>;
-//# sourceMappingURL=postFloorInventory.d.ts.map

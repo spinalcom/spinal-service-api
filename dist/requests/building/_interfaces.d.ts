@@ -8,4 +8,3 @@ export interface IBuildingItem extends INodeItem {
     address: string;
     area: string;
 }
-//# sourceMappingURL=_interfaces.d.ts.map

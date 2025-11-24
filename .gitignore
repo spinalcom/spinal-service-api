@@ -6,3 +6,6 @@ node_modules/
 static/configs
 bkp*
 tmp_config
+src/test.ts
+
+dist/test*

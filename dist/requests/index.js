@@ -1,64 +1,87 @@
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
 //MARK: BIM
-export * from "./BIM/postGetBimObjectInfo";
-export * from "./BIM/getBIMFileContext";
+__exportStar(require("./BIM/postGetBimObjectInfo"), exports);
+__exportStar(require("./BIM/getBIMFileContext"), exports);
 //MARK: Building
-export * from "./building/getBuildingRead";
+__exportStar(require("./building/getBuildingRead"), exports);
 //MARK: Context
-export * from "./context/getContextList";
+__exportStar(require("./context/getContextList"), exports);
 //MARK: GroupContext
-export * from "./groupContext/getGroupContextCategoryList";
-export * from "./groupContext/getGroupContextGroupList";
-export * from "./groupContext/getGroupContextGroupRead";
+__exportStar(require("./groupContext/getGroupContextCategoryList"), exports);
+__exportStar(require("./groupContext/getGroupContextGroupList"), exports);
+__exportStar(require("./groupContext/getGroupContextGroupRead"), exports);
 //MARK: Floor
-export * from "./floor/getFloorList";
-export * from "./floor/postFloorInventory";
-export * from "./floor/getFloorRefenceObjectsList";
-export * from "./floor/getFloorRoomList";
+__exportStar(require("./floor/getFloorList"), exports);
+__exportStar(require("./floor/postFloorInventory"), exports);
+__exportStar(require("./floor/getFloorRefenceObjectsList"), exports);
+__exportStar(require("./floor/getFloorRoomList"), exports);
 //MARK: RoomGroup
-export * from "./roomGroup/getRoomList";
+__exportStar(require("./roomGroup/getRoomList"), exports);
 //MARK: Room
-export * from "./room/getRoomStaticDetails";
-export * from "./room/postRoomInventoryMultiple";
-export * from "./room/postRoomInventory";
-export * from "./room/getRoomEquipmentList";
-export * from "./room/getRoomRefenceObjectsList";
-export * from "./room/getRoomPosition";
+__exportStar(require("./room/getRoomStaticDetails"), exports);
+__exportStar(require("./room/postRoomInventoryMultiple"), exports);
+__exportStar(require("./room/postRoomInventory"), exports);
+__exportStar(require("./room/getRoomEquipmentList"), exports);
+__exportStar(require("./room/getRoomRefenceObjectsList"), exports);
+__exportStar(require("./room/getRoomPosition"), exports);
+__exportStar(require("./room/posts/getRoomReadStaticDetailsMultiple"), exports);
 //MARK: Equipment:
+<<<<<<< HEAD
 export * from "./equipment/postEquipmentPositionMultiple";
 export * from "./equipment/posts/ReadStaticDetailsMultiple";
+=======
+__exportStar(require("./equipment/postEquipmentPositionMultiple"), exports);
+__exportStar(require("./equipment/posts/getEquipmentReadStaticDetailsMultiple"), exports);
+>>>>>>> 4c96306 (Ajout des requête ReadStaticDetails (room, equipment))
 //MARK: equipmentsGroup
-export * from "./equipmentsGroup/getEquipmentGroupList";
-export * from "./equipmentsGroup/getEquipmentGroupCategoryList";
-export * from "./equipmentsGroup/getEquipmentGroupGroupList";
-export * from "./equipmentsGroup/getEquipmentGroupEquipmentList";
+__exportStar(require("./equipmentsGroup/getEquipmentGroupList"), exports);
+__exportStar(require("./equipmentsGroup/getEquipmentGroupCategoryList"), exports);
+__exportStar(require("./equipmentsGroup/getEquipmentGroupGroupList"), exports);
+__exportStar(require("./equipmentsGroup/getEquipmentGroupEquipmentList"), exports);
 //MARK: Node
-export * from "./node/getTicketList";
-export * from "./node/postTicketListMultiple";
-export * from "./node/postUploadFile";
-export * from "./node/deleteFile";
-export * from "./node/deleteCategoryAttribut";
-export * from "./node/postUpdateAttribut";
-export * from "./node/postUpdateCategoryAttribut";
-export * from "./node/deleteAttribut";
-export * from "./node/postUpdateAttributMultiple";
-export * from "./node/getCategoriesList";
-export * from "./node/postCreateAttribut";
-export * from "./node/postCreateCategory";
-export * from './node/getNodeRead';
-export * from "./node/getNodeParent";
-export * from "./node/postAttributListMultiple";
-export * from "./node/postDownloadFile";
+__exportStar(require("./node/getTicketList"), exports);
+__exportStar(require("./node/postTicketListMultiple"), exports);
+__exportStar(require("./node/postUploadFile"), exports);
+__exportStar(require("./node/deleteFile"), exports);
+__exportStar(require("./node/deleteCategoryAttribut"), exports);
+__exportStar(require("./node/postUpdateAttribut"), exports);
+__exportStar(require("./node/postUpdateCategoryAttribut"), exports);
+__exportStar(require("./node/deleteAttribut"), exports);
+__exportStar(require("./node/postUpdateAttributMultiple"), exports);
+__exportStar(require("./node/getCategoriesList"), exports);
+__exportStar(require("./node/postCreateAttribut"), exports);
+__exportStar(require("./node/postCreateCategory"), exports);
+__exportStar(require("./node/getNodeRead"), exports);
+__exportStar(require("./node/getNodeParent"), exports);
+__exportStar(require("./node/postAttributListMultiple"), exports);
+__exportStar(require("./node/postDownloadFile"), exports);
 //MARK: Ticket
-export * from "./ticket/createTicket";
-export * from "./ticket/getTicketDetails";
-export * from "./ticket/postAddDoc";
-export * from "./ticket/postArchiveTicket";
-export * from "./ticket/postAddNoteTicket";
-export * from "./ticket/postMoveToStepTicket";
-export * from "./ticket/postTicketReadDetailsMultiple";
-export * from "./ticket/updateTicket";
+__exportStar(require("./ticket/createTicket"), exports);
+__exportStar(require("./ticket/getTicketDetails"), exports);
+__exportStar(require("./ticket/postAddDoc"), exports);
+__exportStar(require("./ticket/postArchiveTicket"), exports);
+__exportStar(require("./ticket/postAddNoteTicket"), exports);
+__exportStar(require("./ticket/postMoveToStepTicket"), exports);
+__exportStar(require("./ticket/postTicketReadDetailsMultiple"), exports);
+__exportStar(require("./ticket/updateTicket"), exports);
 //MARK: Workflow
-export * from "./workflow/getWorkflowList";
-export * from "./workflow/getWorkflowProcessList";
-export * from "./workflow/getWorkflowStepList";
-export * from "./workflow/getWorkflowTree";
+__exportStar(require("./workflow/getWorkflowList"), exports);
+__exportStar(require("./workflow/getWorkflowProcessList"), exports);
+__exportStar(require("./workflow/getWorkflowStepList"), exports);
+__exportStar(require("./workflow/getWorkflowTree"), exports);
+//# sourceMappingURL=index.js.map

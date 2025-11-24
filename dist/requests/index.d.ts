@@ -16,8 +16,9 @@ export * from "./room/postRoomInventory";
 export * from "./room/getRoomEquipmentList";
 export * from "./room/getRoomRefenceObjectsList";
 export * from "./room/getRoomPosition";
+export * from "./room/posts/getRoomReadStaticDetailsMultiple";
 export * from "./equipment/postEquipmentPositionMultiple";
-export * from "./equipment/posts/ReadStaticDetailsMultiple";
+export * from "./equipment/posts/getEquipmentReadStaticDetailsMultiple";
 export * from "./equipmentsGroup/getEquipmentGroupList";
 export * from "./equipmentsGroup/getEquipmentGroupCategoryList";
 export * from "./equipmentsGroup/getEquipmentGroupGroupList";
@@ -50,4 +51,3 @@ export * from "./workflow/getWorkflowList";
 export * from "./workflow/getWorkflowProcessList";
 export * from "./workflow/getWorkflowStepList";
 export * from "./workflow/getWorkflowTree";
-//# sourceMappingURL=index.d.ts.map

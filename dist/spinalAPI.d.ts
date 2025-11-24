@@ -34,4 +34,3 @@ export declare class SpinalAPI {
     createIteratorCall<K extends (...args: any[]) => any>(fct: K, ...args: Parameters<K>): AsyncGenerator<Awaited<ReturnType<K>>>;
 }
 export {};
-//# sourceMappingURL=spinalAPI.d.ts.map

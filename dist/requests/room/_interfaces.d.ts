@@ -65,4 +65,3 @@ export interface IDefault_attributs {
     revitFamily: string;
     revitType: string;
 }
-//# sourceMappingURL=_interfaces.d.ts.map

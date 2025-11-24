@@ -17,26 +17,7 @@ function resolveEnv(key: string): string | undefined {
       ? (process as any).env[key]
       : undefined;
 
-  // Vite / Astro (client)
-  const fromImportMeta =
-    typeof import.meta !== "undefined" &&
-    (import.meta as any).env &&
-    (import.meta as any).env[key];
-
-  // Vite variables publiques usuelles (fallback ergonomique)
-  const vitePublic =
-    typeof import.meta !== "undefined" &&
-    (import.meta as any).env &&
-    ((import.meta as any).env["VITE_" + key] ||
-      (import.meta as any).env["PUBLIC_" + key]);
-
-  // Next.js côté client (variables publiques)
-  const nextPublic =
-    typeof process !== "undefined" &&
-    (process as any).env &&
-    ((process as any).env["NEXT_PUBLIC_" + key] ||
-      (process as any).env["PUBLIC_" + key]);
-
+  
   // Global ad hoc (optionnel)
   const fromGlobal =
     typeof globalThis !== "undefined" &&
@@ -44,7 +25,7 @@ function resolveEnv(key: string): string | undefined {
       ? String((globalThis as any)[key])
       : undefined;
 
-  return fromProcess ?? fromImportMeta ?? vitePublic ?? nextPublic ?? fromGlobal;
+  return fromProcess  ?? fromGlobal;
 }
 
 function safeWindow(): SpinalWindow | undefined {
@@ -95,6 +76,7 @@ export class SpinalAPI {
       const ls = safeLocalStorage();
       const t = ls?.getItem("token");
       if (t) {
+        // @ts-ignore
         request.headers = request.headers ?? {};
         (request.headers as any).Authorization = `Bearer ${t}`;
       }

@@ -42,4 +42,3 @@ export interface ILogListItem {
     event: string;
     ticketStaticId: string;
 }
-//# sourceMappingURL=_interfaces.d.ts.map

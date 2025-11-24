@@ -36,4 +36,3 @@ interface IParentRelationListItem extends IBaseNode {
     children_number: number;
 }
 export {};
-//# sourceMappingURL=_interfaces.d.ts.map

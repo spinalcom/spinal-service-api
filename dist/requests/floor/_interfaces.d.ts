@@ -29,4 +29,3 @@ interface IAttributsItem {
     date?: number;
 }
 export {};
-//# sourceMappingURL=_interfaces.d.ts.map

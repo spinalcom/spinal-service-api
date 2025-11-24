@@ -48,4 +48,3 @@ export interface IAttributsItem {
     type: number;
     unit: number;
 }
-//# sourceMappingURL=_interfaces.d.ts.map

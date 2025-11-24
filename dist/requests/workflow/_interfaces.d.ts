@@ -11,4 +11,3 @@ export interface IWorkflowItemItem {
     name: string;
     type: string;
 }
-//# sourceMappingURL=_interfaces.d.ts.map

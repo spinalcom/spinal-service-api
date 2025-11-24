@@ -3,4 +3,3 @@ export declare function postRoomInventory(buildingId: string, id: number, body: 
     category: string;
     groups: [];
 }, options: any): Promise<any>;
-//# sourceMappingURL=postRoomInventory.d.ts.map

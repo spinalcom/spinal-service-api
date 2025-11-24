@@ -1,11 +1,26 @@
-import { SpinalAPI } from "../../spinalAPI"; // chemin relatif à src/requests/building
-export async function getEquipmentGroupList(patrimoineId, buildingId, floorId, floorDynId) {
-    const spinalAPI = SpinalAPI.getInstance();
-    const url = spinalAPI.createUrlWithPlatformId(buildingId, `api/v1/equipementsGroup/list`);
-    let result = await spinalAPI.get(url);
-    const res = result.data.map((obj) => {
-        Object.assign(obj, { patrimoineId, buildingId, floorId, color: '#ded638' });
-        return obj;
+"use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
-    return res;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getEquipmentGroupList = getEquipmentGroupList;
+const spinalAPI_1 = require("../../spinalAPI"); // chemin relatif à src/requests/building
+function getEquipmentGroupList(patrimoineId, buildingId, floorId, floorDynId) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const spinalAPI = spinalAPI_1.SpinalAPI.getInstance();
+        const url = spinalAPI.createUrlWithPlatformId(buildingId, `api/v1/equipementsGroup/list`);
+        let result = yield spinalAPI.get(url);
+        const res = result.data.map((obj) => {
+            Object.assign(obj, { patrimoineId, buildingId, floorId, color: '#ded638' });
+            return obj;
+        });
+        return res;
+    });
 }
+//# sourceMappingURL=getEquipmentGroupList.js.map
