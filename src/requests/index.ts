@@ -41,6 +41,7 @@ export * from "./equipmentsGroup/getEquipmentGroupList";
 export * from "./equipmentsGroup/getEquipmentGroupCategoryList";
 export * from "./equipmentsGroup/getEquipmentGroupGroupList";
 export * from "./equipmentsGroup/getEquipmentGroupEquipmentList";
+export * from "./equipmentsGroup/AddEquipmentInGroup";
 
 //MARK: Node
 export * from "./node/getTicketList";
@@ -77,9 +78,8 @@ export * from "./workflow/getWorkflowStepList";
 export * from "./workflow/getWorkflowTree";
 
 
-
-
-
+//MARK: Attribute
+export * from "./attriubte/postUpdateAttributeMultiple";
 
 
 
