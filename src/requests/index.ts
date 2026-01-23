@@ -13,6 +13,10 @@ export * from "./groupContext/getGroupContextCategoryList";
 export * from "./groupContext/getGroupContextGroupList";
 export * from "./groupContext/getGroupContextGroupRead";
 
+export * from "./groupContext/PostAddContext";
+export * from "./groupContext/PostAddCategory";
+export * from "./groupContext/PostAddGroup";
+
 //MARK: Floor
 export * from "./floor/getFloorList";
 export * from "./floor/postFloorInventory";
