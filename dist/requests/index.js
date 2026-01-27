@@ -43,6 +43,7 @@ __exportStar(require("./room/getRoomEquipmentList"), exports);
 __exportStar(require("./room/getRoomRefenceObjectsList"), exports);
 __exportStar(require("./room/getRoomPosition"), exports);
 __exportStar(require("./room/posts/getRoomReadStaticDetailsMultiple"), exports);
+__exportStar(require("./room/AddRooms"), exports);
 //MARK: Equipment:
 __exportStar(require("./equipment/postEquipmentPositionMultiple"), exports);
 __exportStar(require("./equipment/posts/getEquipmentReadStaticDetailsMultiple"), exports);
