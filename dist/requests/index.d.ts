@@ -12,6 +12,7 @@ export * from "./floor/getFloorList";
 export * from "./floor/postFloorInventory";
 export * from "./floor/getFloorRefenceObjectsList";
 export * from "./floor/getFloorRoomList";
+export * from "./floor/getFloorRoomList2";
 export * from "./roomGroup/getRoomList";
 export * from "./room/getRoomStaticDetails";
 export * from "./room/postRoomInventoryMultiple";

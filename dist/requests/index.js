@@ -33,6 +33,7 @@ __exportStar(require("./floor/getFloorList"), exports);
 __exportStar(require("./floor/postFloorInventory"), exports);
 __exportStar(require("./floor/getFloorRefenceObjectsList"), exports);
 __exportStar(require("./floor/getFloorRoomList"), exports);
+__exportStar(require("./floor/getFloorRoomList2"), exports);
 //MARK: RoomGroup
 __exportStar(require("./roomGroup/getRoomList"), exports);
 //MARK: Room
