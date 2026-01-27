@@ -9,3 +9,13 @@ export interface IGroupingItem extends INodeItem {
     icon?: string;
 }
 export type IGroupingItemObject = IGroupingItem[];
+export interface ICategoryAddParam {
+    categoryName: string;
+    categoryIcon: string;
+    categoryColor: string;
+}
+export interface IGroupAddParam {
+    groupName: string;
+    groupColor: string;
+    groupIcon: string;
+}

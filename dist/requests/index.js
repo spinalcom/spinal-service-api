@@ -25,6 +25,9 @@ __exportStar(require("./context/getContextList"), exports);
 __exportStar(require("./groupContext/getGroupContextCategoryList"), exports);
 __exportStar(require("./groupContext/getGroupContextGroupList"), exports);
 __exportStar(require("./groupContext/getGroupContextGroupRead"), exports);
+__exportStar(require("./groupContext/PostAddContext"), exports);
+__exportStar(require("./groupContext/PostAddCategory"), exports);
+__exportStar(require("./groupContext/PostAddGroup"), exports);
 //MARK: Floor
 __exportStar(require("./floor/getFloorList"), exports);
 __exportStar(require("./floor/postFloorInventory"), exports);
@@ -48,6 +51,7 @@ __exportStar(require("./equipmentsGroup/getEquipmentGroupList"), exports);
 __exportStar(require("./equipmentsGroup/getEquipmentGroupCategoryList"), exports);
 __exportStar(require("./equipmentsGroup/getEquipmentGroupGroupList"), exports);
 __exportStar(require("./equipmentsGroup/getEquipmentGroupEquipmentList"), exports);
+__exportStar(require("./equipmentsGroup/AddEquipmentInGroup"), exports);
 //MARK: Node
 __exportStar(require("./node/getTicketList"), exports);
 __exportStar(require("./node/postTicketListMultiple"), exports);
@@ -79,4 +83,6 @@ __exportStar(require("./workflow/getWorkflowList"), exports);
 __exportStar(require("./workflow/getWorkflowProcessList"), exports);
 __exportStar(require("./workflow/getWorkflowStepList"), exports);
 __exportStar(require("./workflow/getWorkflowTree"), exports);
+//MARK: Attribute
+__exportStar(require("./attriubte/postUpdateAttributeMultiple"), exports);
 //# sourceMappingURL=index.js.map
