@@ -11,7 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getRoomEquipmentList = getRoomEquipmentList;
 const spinalAPI_1 = require("../../spinalAPI"); // chemin relatif à src/requests/building
-function getRoomEquipmentList(patrimoineId, buildingId, floorId, roomId, roomDynId) {
+function getRoomEquipmentList(buildingId, roomDynId) {
     return __awaiter(this, void 0, void 0, function* () {
         const spinalAPI = spinalAPI_1.SpinalAPI.getInstance();
         const url = spinalAPI.createUrlWithPlatformId(buildingId, `api/v1/room/${roomDynId}/equipement_list`);
