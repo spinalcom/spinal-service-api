@@ -11,12 +11,16 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getFloorRoomList = getFloorRoomList;
 const spinalAPI_1 = require("../../spinalAPI"); // chemin relatif à src/requests/building
-function getFloorRoomList(buildingId, floorDynId) {
+function getFloorRoomList(patrimoineId, buildingId, floorId, floorDynId) {
     return __awaiter(this, void 0, void 0, function* () {
         const spinalAPI = spinalAPI_1.SpinalAPI.getInstance();
         const url = spinalAPI.createUrlWithPlatformId(buildingId, `api/v1/floor/${floorDynId}/room_list`);
-        const result = yield spinalAPI.get(url);
-        return result.data;
+        let result = yield spinalAPI.get(url);
+        const res = result.data.map((obj) => {
+            Object.assign(obj, { patrimoineId, buildingId, floorId, color: '#ded638' });
+            return obj;
+        });
+        return res;
     });
 }
 //# sourceMappingURL=getFloorRoomList.js.map
