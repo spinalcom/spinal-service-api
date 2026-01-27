@@ -37,6 +37,7 @@ export * from "./node/postUpdateCategoryAttribut";
 export * from "./node/deleteAttribut";
 export * from "./node/postUpdateAttributMultiple";
 export * from "./node/getCategoriesList";
+export * from "./node/getAttributeList";
 export * from "./node/postCreateAttribut";
 export * from "./node/postCreateCategory";
 export * from './node/getNodeRead';

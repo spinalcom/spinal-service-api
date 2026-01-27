@@ -63,6 +63,7 @@ __exportStar(require("./node/postUpdateCategoryAttribut"), exports);
 __exportStar(require("./node/deleteAttribut"), exports);
 __exportStar(require("./node/postUpdateAttributMultiple"), exports);
 __exportStar(require("./node/getCategoriesList"), exports);
+__exportStar(require("./node/getAttributeList"), exports);
 __exportStar(require("./node/postCreateAttribut"), exports);
 __exportStar(require("./node/postCreateCategory"), exports);
 __exportStar(require("./node/getNodeRead"), exports);
