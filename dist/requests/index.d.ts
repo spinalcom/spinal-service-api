@@ -47,6 +47,7 @@ export * from './node/getNodeRead';
 export * from "./node/getNodeParent";
 export * from "./node/postAttributListMultiple";
 export * from "./node/postDownloadFile";
+export * from "./node/getFileList";
 export * from "./ticket/createTicket";
 export * from "./ticket/getTicketDetails";
 export * from "./ticket/postAddDoc";

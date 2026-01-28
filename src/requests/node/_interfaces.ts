@@ -30,6 +30,7 @@ export interface INodeItem {
 }
 
 export type IWorkflowItem = IWorkflowItemItem[];
+export type INodeFileList = INodeFileItem[];
 
 export interface IWorkflowItemItem {
   dynamicId: number;
@@ -81,3 +82,9 @@ export interface IAttributsItem {
   type: number;
   unit: number;
 }
+
+export interface INodeFileItem {
+  dynamicId: number;
+  Name: string;
+}
+
