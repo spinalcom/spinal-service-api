@@ -26,6 +26,7 @@ export * from "./floor/getFloorRoomList2";
 
 //MARK: RoomGroup
 export * from "./roomGroup/getRoomList"
+export * from "./roomGroup/getRoomList2";
 
 //MARK: Room
 export * from "./room/getRoomStaticDetails";

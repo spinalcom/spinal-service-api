@@ -36,6 +36,7 @@ __exportStar(require("./floor/getFloorRoomList"), exports);
 __exportStar(require("./floor/getFloorRoomList2"), exports);
 //MARK: RoomGroup
 __exportStar(require("./roomGroup/getRoomList"), exports);
+__exportStar(require("./roomGroup/getRoomList2"), exports);
 //MARK: Room
 __exportStar(require("./room/getRoomStaticDetails"), exports);
 __exportStar(require("./room/postRoomInventoryMultiple"), exports);
