@@ -39,6 +39,10 @@ export * from "./room/posts/getRoomReadStaticDetailsMultiple";
 export * from "./room/AddRooms";
 
 
+//MARK: Endpoint:
+export * from "./endpoint/getEndpointTimeSeries";
+
+
 //MARK: Equipment:
 export * from "./equipment/postEquipmentPositionMultiple";
 export * from "./equipment/posts/getEquipmentReadStaticDetailsMultiple";
