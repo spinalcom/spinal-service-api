@@ -15,7 +15,11 @@ function getControlEndpointList(buildingId, referenceId) {
     return __awaiter(this, void 0, void 0, function* () {
         const spinalAPI = spinalAPI_1.SpinalAPI.getInstance();
         const url = spinalAPI.createUrlWithPlatformId(buildingId, `/api/v1/node/${referenceId}/control_endpoint_list`);
-        const result = yield spinalAPI.get(url);
+        const result = yield spinalAPI.get(url, {
+            params: {
+                "includeDetails": true
+            }
+        });
         return result.data;
     });
 }
