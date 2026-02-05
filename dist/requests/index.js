@@ -48,6 +48,7 @@ __exportStar(require("./room/posts/getRoomReadStaticDetailsMultiple"), exports);
 __exportStar(require("./room/AddRooms"), exports);
 //MARK: Endpoint:
 __exportStar(require("./endpoint/getEndpointTimeSeries"), exports);
+__exportStar(require("./endpoint/postUpdateEndpoint"), exports);
 //MARK: Equipment:
 __exportStar(require("./equipment/postEquipmentPositionMultiple"), exports);
 __exportStar(require("./equipment/posts/getEquipmentReadStaticDetailsMultiple"), exports);

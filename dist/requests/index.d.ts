@@ -24,6 +24,7 @@ export * from "./room/getRoomPosition";
 export * from "./room/posts/getRoomReadStaticDetailsMultiple";
 export * from "./room/AddRooms";
 export * from "./endpoint/getEndpointTimeSeries";
+export * from "./endpoint/postUpdateEndpoint";
 export * from "./equipment/postEquipmentPositionMultiple";
 export * from "./equipment/posts/getEquipmentReadStaticDetailsMultiple";
 export * from "./equipmentsGroup/getEquipmentGroupList";

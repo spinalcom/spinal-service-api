@@ -41,6 +41,7 @@ export * from "./room/AddRooms";
 
 //MARK: Endpoint:
 export * from "./endpoint/getEndpointTimeSeries";
+export * from "./endpoint/postUpdateEndpoint"
 
 
 //MARK: Equipment:
