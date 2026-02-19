@@ -45,6 +45,7 @@ __exportStar(require("./room/getRoomEquipmentList"), exports);
 __exportStar(require("./room/getRoomRefenceObjectsList"), exports);
 __exportStar(require("./room/getRoomPosition"), exports);
 __exportStar(require("./room/posts/getRoomReadStaticDetailsMultiple"), exports);
+__exportStar(require("./room/postRoomPositionMultiple"), exports);
 __exportStar(require("./room/AddRooms"), exports);
 //MARK: Endpoint:
 __exportStar(require("./endpoint/getEndpointTimeSeries"), exports);

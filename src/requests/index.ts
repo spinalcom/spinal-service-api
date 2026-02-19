@@ -36,6 +36,7 @@ export * from "./room/getRoomEquipmentList";
 export * from "./room/getRoomRefenceObjectsList";
 export * from "./room/getRoomPosition";
 export * from "./room/posts/getRoomReadStaticDetailsMultiple";
+export * from "./room/postRoomPositionMultiple";
 export * from "./room/AddRooms";
 
 

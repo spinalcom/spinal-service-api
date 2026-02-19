@@ -98,3 +98,32 @@ export interface IDefault_attributs {
   revitFamily: string;
   revitType: string;
 }
+
+
+export interface IRoomPosition {
+
+    dynamicId: number;
+    staticId: string;
+    name: string;
+    type: string;
+    info: {
+      context: {
+        dynamicId: number;
+        staticId: string;
+        name: string;
+        type: string;
+      },
+      building: {
+        dynamicId: number;
+        staticId: string;
+        name: string;
+        type: string;
+      },
+      floor: {
+        dynamicId: number;
+        staticId: string;
+        name: string;
+        type: string;
+      }
+    }
+  }
