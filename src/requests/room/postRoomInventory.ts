@@ -1,9 +1,17 @@
 import { SpinalAPI } from "../../spinalAPI"; // chemin relatif à src/requests/building
 
+type InventoryIdentifier = string | number;
+
+interface IInventoryBody {
+  context: InventoryIdentifier;
+  category: InventoryIdentifier;
+  groups: InventoryIdentifier[];
+}
+
 export async function postRoomInventory(
   buildingId: string,
   id: number,
-  body: { context: string; category: string; groups: [] },
+  body: IInventoryBody,
   options: any
 ): Promise<any> {
   const spinalAPI = SpinalAPI.getInstance();

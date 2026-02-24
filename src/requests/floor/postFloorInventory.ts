@@ -1,8 +1,15 @@
-
 import { SpinalAPI } from "../../spinalAPI"; // chemin relatif à src/requests/building
 // import { item } from "./_interfaces";
 
-export async function postFloorInventory(id: number, body: { context: string; category: string; groups: any }, options: any): Promise<any> {
+type InventoryIdentifier = string | number;
+
+interface IInventoryBody {
+    context: InventoryIdentifier;
+    category: InventoryIdentifier;
+    groups: InventoryIdentifier[];
+}
+
+export async function postFloorInventory(id: number, body: IInventoryBody, options: any): Promise<any> {
     const spinalAPI = SpinalAPI.getInstance();
     const buildingId = sessionStorage.getItem("idBuilding") || '';
     const url = spinalAPI.createUrlWithPlatformId(buildingId, `/api/v1/floor/${id}/inventory`);
