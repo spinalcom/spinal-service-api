@@ -77,6 +77,7 @@ export * from "./node/getNodeParent"
 export * from "./node/postAttributListMultiple"
 export * from "./node/postDownloadFile"
 export * from "./node/getFileList"
+export * from "./node/getNoteList"
 
 
 //MARK: Ticket

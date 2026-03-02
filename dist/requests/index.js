@@ -80,6 +80,7 @@ __exportStar(require("./node/getNodeParent"), exports);
 __exportStar(require("./node/postAttributListMultiple"), exports);
 __exportStar(require("./node/postDownloadFile"), exports);
 __exportStar(require("./node/getFileList"), exports);
+__exportStar(require("./node/getNoteList"), exports);
 //MARK: Ticket
 __exportStar(require("./ticket/createTicket"), exports);
 __exportStar(require("./ticket/getTicketDetails"), exports);
