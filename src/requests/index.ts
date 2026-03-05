@@ -78,6 +78,7 @@ export * from "./node/postAttributListMultiple"
 export * from "./node/postDownloadFile"
 export * from "./node/getFileList"
 export * from "./node/getNoteList"
+export * from "./node/postNodeChildren"
 
 
 //MARK: Ticket
@@ -99,7 +100,6 @@ export * from "./workflow/getWorkflowTree";
 
 //MARK: Attribute
 export * from "./attriubte/postUpdateAttributeMultiple";
-
 
 
 

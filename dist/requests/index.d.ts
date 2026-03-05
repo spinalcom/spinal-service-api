@@ -54,6 +54,7 @@ export * from "./node/postAttributListMultiple";
 export * from "./node/postDownloadFile";
 export * from "./node/getFileList";
 export * from "./node/getNoteList";
+export * from "./node/postNodeChildren";
 export * from "./ticket/createTicket";
 export * from "./ticket/getTicketDetails";
 export * from "./ticket/postAddDoc";
