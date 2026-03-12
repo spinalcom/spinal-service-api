@@ -1,6 +1,6 @@
 import { SpinalAPI } from "../../spinalAPI"; // chemin relatif à src/requests/building
 
-export async function moveToStepTicket(building: string, ticketId: string, data: { workflowDynamicId: number; toStepOrder: number; toStepName: string }) {
+export async function moveToStepTicket(building: string, ticketId: string, data: { workflowDynamicId: number; toStepName: string }) {
   const spinalAPI = SpinalAPI.getInstance();
   const url = spinalAPI.createUrlWithPlatformId(
     building,
