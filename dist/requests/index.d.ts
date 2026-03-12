@@ -63,6 +63,7 @@ export * from "./ticket/postAddNoteTicket";
 export * from "./ticket/postMoveToStepTicket";
 export * from "./ticket/postTicketReadDetailsMultiple";
 export * from "./ticket/updateTicket";
+export * from './ticket/PostUnarchiveTicket';
 export * from "./workflow/getWorkflowList";
 export * from "./workflow/getWorkflowProcessList";
 export * from "./workflow/getWorkflowStepList";

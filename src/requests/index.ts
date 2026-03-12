@@ -90,6 +90,7 @@ export * from "./ticket/postAddNoteTicket";
 export * from "./ticket/postMoveToStepTicket";
 export * from "./ticket/postTicketReadDetailsMultiple";
 export * from "./ticket/updateTicket";
+export * from './ticket/PostUnarchiveTicket';
 
 //MARK: Workflow
 export * from "./workflow/getWorkflowList";

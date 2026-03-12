@@ -91,6 +91,7 @@ __exportStar(require("./ticket/postAddNoteTicket"), exports);
 __exportStar(require("./ticket/postMoveToStepTicket"), exports);
 __exportStar(require("./ticket/postTicketReadDetailsMultiple"), exports);
 __exportStar(require("./ticket/updateTicket"), exports);
+__exportStar(require("./ticket/PostUnarchiveTicket"), exports);
 //MARK: Workflow
 __exportStar(require("./workflow/getWorkflowList"), exports);
 __exportStar(require("./workflow/getWorkflowProcessList"), exports);
