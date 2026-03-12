@@ -17,10 +17,10 @@ function postUnarchiveTicket(buildingId, ticketId, data) {
             const spinalAPI = spinalAPI_1.SpinalAPI.getInstance();
             const url = spinalAPI.createUrlWithPlatformId(buildingId, `api/v1/ticket/${ticketId}/unarchive`);
             const res = yield spinalAPI.post(url, data);
-            return res && res.data && res.data.success === true;
+            return res.data;
         }
         catch (error) {
-            return false;
+            throw error;
         }
     });
 }
