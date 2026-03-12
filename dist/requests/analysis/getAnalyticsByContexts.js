@@ -9,20 +9,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getContextList = getContextList;
+exports.getAnalyticsBycontexts = getAnalyticsBycontexts;
 const spinalAPI_1 = require("../../spinalAPI"); // chemin relatif à src/requests/building
-function getContextList(buildingId) {
+function getAnalyticsBycontexts(buildingId, contextId) {
     return __awaiter(this, void 0, void 0, function* () {
         const spinalAPI = spinalAPI_1.SpinalAPI.getInstance();
-        const url = spinalAPI.createUrlWithPlatformId(buildingId, '/api/v1/context/list');
-        try {
-            let result = yield spinalAPI.get(url); // Envoyer le tableau d'identifiants
-            return result.data;
-        }
-        catch (error) {
-            console.error('Erreur lors de la récupération des positions des pièces:', error);
-            throw error;
-        }
+        const url = spinalAPI.createUrlWithPlatformId(buildingId, `/api/v1/analysis/contexts/${contextId}/analytics`);
+        const result = yield spinalAPI.get(url);
+        return result.data;
     });
 }
 //# sourceMappingURL=getAnalyticsByContexts.js.map

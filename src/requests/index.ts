@@ -102,6 +102,14 @@ export * from "./workflow/getWorkflowTree";
 //MARK: Attribute
 export * from "./attriubte/postUpdateAttributeMultiple";
 
+//MARK : Analysis
+export * from "./analysis/getAnalyseAlgorithms";
+export * from "./analysis/getAnalyseAnalytics";
+export * from "./analysis/getAnalyseContextsList";
+export * from "./analysis/getAnalysisTriggerTypes";
+export * from "./analysis/getAnalyticsByContexts";
+export * from "./analysis/postAnalysticsByContexts";
+export * from "./analysis/postContexts";
 
 
 
