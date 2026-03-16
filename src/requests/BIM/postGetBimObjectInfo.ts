@@ -3,11 +3,17 @@ import { SpinalAPI } from "../../spinalAPI"; // chemin relatif à src/requests/b
 import { IBimObjet } from "./_interfaces";
 
 
-export async function postGetBimObjectInfo(buildingId: string, referenceIds: any): Promise<IBimObjet> {
+export async function postGetBimObjectInfo(buildingId: string, dbIds: number[], bimFileId: string): Promise<IBimObjet> {
     const spinalAPI = SpinalAPI.getInstance();
+    const body = [
+        {
+            bimFileId: bimFileId,
+            dbIds: dbIds.map(id => ({ id }))
+        }
+    ]
     const url = spinalAPI.createUrlWithPlatformId(buildingId, '/api/v1/BIM/getBimObjectsInfo');
     try {
-        const response = await spinalAPI.post<IBimObjet>(url, referenceIds);
+        const response = await spinalAPI.post<IBimObjet>(url, body);
         return response.data;
     } catch (error) {
         console.error('Erreur lors de la récupération des objets de référence:', error);

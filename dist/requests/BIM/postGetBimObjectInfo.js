@@ -11,12 +11,18 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.postGetBimObjectInfo = postGetBimObjectInfo;
 const spinalAPI_1 = require("../../spinalAPI"); // chemin relatif à src/requests/building
-function postGetBimObjectInfo(buildingId, referenceIds) {
+function postGetBimObjectInfo(buildingId, dbIds, bimFileId) {
     return __awaiter(this, void 0, void 0, function* () {
         const spinalAPI = spinalAPI_1.SpinalAPI.getInstance();
+        const body = [
+            {
+                bimFileId: bimFileId,
+                dbIds: dbIds.map(id => ({ id }))
+            }
+        ];
         const url = spinalAPI.createUrlWithPlatformId(buildingId, '/api/v1/BIM/getBimObjectsInfo');
         try {
-            const response = yield spinalAPI.post(url, referenceIds);
+            const response = yield spinalAPI.post(url, body);
             return response.data;
         }
         catch (error) {
