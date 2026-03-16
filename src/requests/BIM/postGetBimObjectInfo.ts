@@ -8,7 +8,7 @@ export async function postGetBimObjectInfo(buildingId: string, dbIds: number[], 
     const body = [
         {
             bimFileId: bimFileId,
-            dbIds: dbIds.map(id => ({ id }))
+            dbIds: dbIds
         }
     ]
     const url = spinalAPI.createUrlWithPlatformId(buildingId, '/api/v1/BIM/getBimObjectsInfo');

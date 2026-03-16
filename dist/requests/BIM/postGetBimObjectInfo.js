@@ -17,7 +17,7 @@ function postGetBimObjectInfo(buildingId, dbIds, bimFileId) {
         const body = [
             {
                 bimFileId: bimFileId,
-                dbIds: dbIds.map(id => ({ id }))
+                dbIds: dbIds
             }
         ];
         const url = spinalAPI.createUrlWithPlatformId(buildingId, '/api/v1/BIM/getBimObjectsInfo');
