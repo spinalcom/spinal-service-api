@@ -18,6 +18,9 @@ export interface IPositionInfo {
     floor: INodeItem;
     room: INodeItem;
 }
+export interface IEquipmentPosition extends INodeItem {
+    info: IPositionInfo;
+}
 export type PositionKey = keyof IPositionInfo;
 /**
  * ReadStaticDetailsMultiple Inteface

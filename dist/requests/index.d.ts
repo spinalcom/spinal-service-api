@@ -28,6 +28,7 @@ export * from "./endpoint/getEndpointTimeSeries";
 export * from "./endpoint/postUpdateEndpoint";
 export * from "./equipment/postEquipmentPositionMultiple";
 export * from "./equipment/posts/getEquipmentReadStaticDetailsMultiple";
+export * from "./equipment/getEquipmentPosition";
 export * from "./equipmentsGroup/getEquipmentGroupList";
 export * from "./equipmentsGroup/getEquipmentGroupCategoryList";
 export * from "./equipmentsGroup/getEquipmentGroupGroupList";

@@ -53,6 +53,7 @@ __exportStar(require("./endpoint/postUpdateEndpoint"), exports);
 //MARK: Equipment:
 __exportStar(require("./equipment/postEquipmentPositionMultiple"), exports);
 __exportStar(require("./equipment/posts/getEquipmentReadStaticDetailsMultiple"), exports);
+__exportStar(require("./equipment/getEquipmentPosition"), exports);
 //MARK: equipmentsGroup
 __exportStar(require("./equipmentsGroup/getEquipmentGroupList"), exports);
 __exportStar(require("./equipmentsGroup/getEquipmentGroupCategoryList"), exports);

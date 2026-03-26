@@ -48,6 +48,7 @@ export * from "./endpoint/postUpdateEndpoint"
 //MARK: Equipment:
 export * from "./equipment/postEquipmentPositionMultiple";
 export * from "./equipment/posts/getEquipmentReadStaticDetailsMultiple";
+export * from "./equipment/getEquipmentPosition";
 
 //MARK: equipmentsGroup
 export * from "./equipmentsGroup/getEquipmentGroupList";

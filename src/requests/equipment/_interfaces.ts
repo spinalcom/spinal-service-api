@@ -49,6 +49,11 @@ export interface IPositionInfo {
 }
 
 
+
+export interface IEquipmentPosition extends INodeItem{
+  info: IPositionInfo;
+
+}
 // (optionnel)
 export type PositionKey = keyof IPositionInfo; 
 
