@@ -28,6 +28,7 @@ export * from "./floor/getFloorStaticDetails";
 //MARK: RoomGroup
 export * from "./roomGroup/getRoomList"
 export * from "./roomGroup/getRoomList2";
+export * from "./roomGroup/postAddRooms";
 
 //MARK: Room
 export * from "./room/getRoomStaticDetails";
@@ -113,7 +114,6 @@ export * from "./analysis/getAnalysisTriggerTypes";
 export * from "./analysis/getAnalyticsByContexts";
 export * from "./analysis/postAnalysticsByContexts";
 export * from "./analysis/postContexts";
-
 
 
 

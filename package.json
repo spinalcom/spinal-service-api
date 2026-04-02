@@ -29,5 +29,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "keywords": []
+  "keywords": [],
+  "spinalDependencies": {}
 }
