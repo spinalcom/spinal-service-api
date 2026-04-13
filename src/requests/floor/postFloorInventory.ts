@@ -17,6 +17,7 @@ export async function postFloorInventory(id: number, body: IInventoryBody, optio
     const params = new URLSearchParams();
     if (options.includePosition !== undefined) params.append("includePosition", String(options.includePosition));
     if (options.includeArea !== undefined) params.append("includeArea", String(options.includeArea));
+    if (options.includeUnassignedItems !== undefined) params.append("includeUnassignedItems", String(options.includeUnassignedItems));
     if (options.onlyDynamicId !== undefined) params.append("onlyDynamicId", String(options.onlyDynamicId));
 
     try {
