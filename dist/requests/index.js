@@ -28,6 +28,7 @@ __exportStar(require("./groupContext/getGroupContextGroupRead"), exports);
 __exportStar(require("./groupContext/PostAddContext"), exports);
 __exportStar(require("./groupContext/PostAddCategory"), exports);
 __exportStar(require("./groupContext/PostAddGroup"), exports);
+__exportStar(require("./groupContext/PostUnassignItems"), exports);
 //MARK: Floor
 __exportStar(require("./floor/getFloorList"), exports);
 __exportStar(require("./floor/postFloorInventory"), exports);

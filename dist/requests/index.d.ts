@@ -8,6 +8,7 @@ export * from "./groupContext/getGroupContextGroupRead";
 export * from "./groupContext/PostAddContext";
 export * from "./groupContext/PostAddCategory";
 export * from "./groupContext/PostAddGroup";
+export * from "./groupContext/PostUnassignItems";
 export * from "./floor/getFloorList";
 export * from "./floor/postFloorInventory";
 export * from "./floor/getFloorRefenceObjectsList";
