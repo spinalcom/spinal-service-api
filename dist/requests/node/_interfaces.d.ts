@@ -30,6 +30,14 @@ export interface IStep extends INodeItem {
     color: string;
     order: number;
 }
+export interface ParentMultipleRequest {
+    dynamicId: number;
+    relations: string[];
+}
+export interface ParentMultipleResponse {
+    dynamicId: number;
+    nodes: INodeItem[];
+}
 export type INodesAttributItem = INodeAttributItem[];
 export interface INodeAttributItem {
     dynamicId: number;

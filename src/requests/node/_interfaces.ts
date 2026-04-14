@@ -60,7 +60,14 @@ export interface IStep extends INodeItem {
   order: number;
 }
 
-
+export interface ParentMultipleRequest {
+  dynamicId: number;
+  relations: string[];
+}
+export interface ParentMultipleResponse {
+  dynamicId: number;
+  nodes: INodeItem[];
+}
 
 export type INodesAttributItem = INodeAttributItem[];
 
