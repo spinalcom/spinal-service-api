@@ -16,7 +16,7 @@ function postNodeChildren(buildingId, id, body) {
         const spinalAPI = spinalAPI_1.SpinalAPI.getInstance();
         const url = spinalAPI.createUrlWithPlatformId(buildingId, `/api/v1/node/${id}/children`);
         const result = yield spinalAPI.post(url, body);
-        return result;
+        return result.data;
     });
 }
 //# sourceMappingURL=postNodeChildren.js.map
