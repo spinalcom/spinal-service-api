@@ -85,6 +85,7 @@ export * from "./node/getNoteList"
 export * from "./node/postNodeChildren"
 export * from "./node/postNodeParentByRelation"
 export * from "./node/postNodeParentsMultiple";
+export * from "./node/postNodeChildrenMultiple";
 
 
 //MARK: Ticket
