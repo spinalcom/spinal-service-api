@@ -62,6 +62,7 @@ export * from "./node/postNodeChildren";
 export * from "./node/postNodeParentByRelation";
 export * from "./node/postNodeParentsMultiple";
 export * from "./node/postNodeChildrenMultiple";
+export * from "./node/postNodeContextChildrenMultiple";
 export * from "./ticket/createTicket";
 export * from "./ticket/getTicketDetails";
 export * from "./ticket/postAddDoc";
