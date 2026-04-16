@@ -11,6 +11,7 @@ export * from "./building/postBuildingInventory";
 export * from "./context/getContextList";
 
 //MARK: GroupContext
+export * from "./groupContext/getGroupContextList";
 export * from "./groupContext/getGroupContextCategoryList";
 export * from "./groupContext/getGroupContextGroupList";
 export * from "./groupContext/getGroupContextGroupRead";
@@ -47,7 +48,8 @@ export * from "./room/AddRooms";
 
 //MARK: Endpoint:
 export * from "./endpoint/getEndpointTimeSeries";
-export * from "./endpoint/postUpdateEndpoint"
+export * from "./endpoint/postUpdateEndpoint";
+export * from "./endpoint/postTimeSeriesReadMultiple";
 
 
 //MARK: Equipment:
@@ -89,6 +91,8 @@ export * from "./node/postNodeParentByRelation"
 export * from "./node/postNodeParentsMultiple";
 export * from "./node/postNodeChildrenMultiple";
 export * from "./node/postNodeContextChildrenMultiple";
+export * from "./node/postControlEndpointListMultiple";
+export * from "./node/postEndpointListMultiple";
 
 
 //MARK: Ticket
