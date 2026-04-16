@@ -9,14 +9,19 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.postNodeChildren = postNodeChildren;
+exports.postNodeContextChildrenMultiple = postNodeContextChildrenMultiple;
 const spinalAPI_1 = require("../../spinalAPI"); // chemin relatif à src/requests/building
-function postNodeChildren(buildingId, id, body) {
+function postNodeContextChildrenMultiple(buildingId, contextId, body) {
     return __awaiter(this, void 0, void 0, function* () {
-        const spinalAPI = spinalAPI_1.SpinalAPI.getInstance();
-        const url = spinalAPI.createUrlWithPlatformId(buildingId, `/api/v1/node/${id}/children`);
-        const result = yield spinalAPI.post(url, body);
-        return result.data;
+        try {
+            const spinalAPI = spinalAPI_1.SpinalAPI.getInstance();
+            const url = spinalAPI.createUrlWithPlatformId(buildingId, `api/v1/context/${contextId}/node/children_multiple`);
+            const response = yield spinalAPI.post(url, body);
+            return response.data;
+        }
+        catch (error) {
+            throw new Error(`Failed to post node context children multiple: ${error}`);
+        }
     });
 }
-//# sourceMappingURL=postNodeChildren.js.map
+//# sourceMappingURL=postNodeContextChildrenMultiple.js.map

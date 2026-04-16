@@ -9,14 +9,19 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.postNodeChildren = postNodeChildren;
+exports.postNodeParentsMultiple = postNodeParentsMultiple;
 const spinalAPI_1 = require("../../spinalAPI"); // chemin relatif à src/requests/building
-function postNodeChildren(buildingId, id, body) {
+function postNodeParentsMultiple(buildingId, body) {
     return __awaiter(this, void 0, void 0, function* () {
-        const spinalAPI = spinalAPI_1.SpinalAPI.getInstance();
-        const url = spinalAPI.createUrlWithPlatformId(buildingId, `/api/v1/node/${id}/children`);
-        const result = yield spinalAPI.post(url, body);
-        return result.data;
+        try {
+            const spinalAPI = spinalAPI_1.SpinalAPI.getInstance();
+            const url = spinalAPI.createUrlWithPlatformId(buildingId, `api/v1/node/parents_multiple`);
+            const response = yield spinalAPI.post(url, body);
+            return response.data;
+        }
+        catch (error) {
+            throw error;
+        }
     });
 }
-//# sourceMappingURL=postNodeChildren.js.map
+//# sourceMappingURL=postNodeParentsMultiple.js.map

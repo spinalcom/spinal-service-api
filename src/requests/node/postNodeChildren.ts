@@ -4,5 +4,5 @@ export async function postNodeChildren(buildingId: string, id: number, body: str
     const spinalAPI = SpinalAPI.getInstance();
     const url = spinalAPI.createUrlWithPlatformId(buildingId, `/api/v1/node/${id}/children`);
     const result = await spinalAPI.post(url, body);
-    return result;
+    return result.data;
 }

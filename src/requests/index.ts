@@ -86,6 +86,9 @@ export * from "./node/getFileList"
 export * from "./node/getNoteList"
 export * from "./node/postNodeChildren"
 export * from "./node/postNodeParentByRelation"
+export * from "./node/postNodeParentsMultiple";
+export * from "./node/postNodeChildrenMultiple";
+export * from "./node/postNodeContextChildrenMultiple";
 
 
 //MARK: Ticket
