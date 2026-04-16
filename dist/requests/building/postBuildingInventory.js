@@ -11,11 +11,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.postBuildingInventory = postBuildingInventory;
 const spinalAPI_1 = require("../../spinalAPI"); // chemin relatif à src/requests/building
-function postBuildingInventory(id, body, options) {
+function postBuildingInventory(body, options) {
     return __awaiter(this, void 0, void 0, function* () {
         const spinalAPI = spinalAPI_1.SpinalAPI.getInstance();
         const buildingId = sessionStorage.getItem("idBuilding") || '';
-        const url = spinalAPI.createUrlWithPlatformId(buildingId, `/api/v1/Building/${id}/inventory`);
+        const url = spinalAPI.createUrlWithPlatformId(buildingId, `/api/v1/building/inventory`);
         const params = new URLSearchParams();
         if (options.includePosition !== undefined)
             params.append("includePosition", String(options.includePosition));
