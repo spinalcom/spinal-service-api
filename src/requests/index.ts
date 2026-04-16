@@ -9,6 +9,7 @@ export * from "./building/postBuildingInventory";
 
 //MARK: Context
 export * from "./context/getContextList";
+export * from "./context/getContextNodePosition";
 
 //MARK: GroupContext
 export * from "./groupContext/getGroupContextList";
@@ -124,9 +125,6 @@ export * from "./analysis/getAnalysisTriggerTypes";
 export * from "./analysis/getAnalyticsByContexts";
 export * from "./analysis/postAnalysticsByContexts";
 export * from "./analysis/postContexts";
-
-
-
 
 
 

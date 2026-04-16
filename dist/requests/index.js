@@ -22,6 +22,7 @@ __exportStar(require("./building/getBuildingRead"), exports);
 __exportStar(require("./building/postBuildingInventory"), exports);
 //MARK: Context
 __exportStar(require("./context/getContextList"), exports);
+__exportStar(require("./context/getContextNodePosition"), exports);
 //MARK: GroupContext
 __exportStar(require("./groupContext/getGroupContextCategoryList"), exports);
 __exportStar(require("./groupContext/getGroupContextGroupList"), exports);

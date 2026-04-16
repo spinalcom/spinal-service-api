@@ -3,6 +3,7 @@ export * from "./BIM/getBIMFileContext";
 export * from "./building/getBuildingRead";
 export * from "./building/postBuildingInventory";
 export * from "./context/getContextList";
+export * from "./context/getContextNodePosition";
 export * from "./groupContext/getGroupContextCategoryList";
 export * from "./groupContext/getGroupContextGroupList";
 export * from "./groupContext/getGroupContextGroupRead";
