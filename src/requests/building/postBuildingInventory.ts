@@ -9,10 +9,10 @@ interface IInventoryBody {
     groups: InventoryIdentifier[];
 }
 
-export async function postBuildingInventory(id: number, body: IInventoryBody, options: any): Promise<any> {
+export async function postBuildingInventory(body: IInventoryBody, options: any): Promise<any> {
     const spinalAPI = SpinalAPI.getInstance();
     const buildingId = sessionStorage.getItem("idBuilding") || '';
-    const url = spinalAPI.createUrlWithPlatformId(buildingId, `/api/v1/Building/${id}/inventory`);
+    const url = spinalAPI.createUrlWithPlatformId(buildingId, `/api/v1/building/inventory`);
 
     const params = new URLSearchParams();
     if (options.includePosition !== undefined) params.append("includePosition", String(options.includePosition));
