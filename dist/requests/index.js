@@ -24,6 +24,7 @@ __exportStar(require("./building/postBuildingInventory"), exports);
 __exportStar(require("./context/getContextList"), exports);
 __exportStar(require("./context/getContextNodePosition"), exports);
 //MARK: GroupContext
+__exportStar(require("./groupContext/getGroupContextList"), exports);
 __exportStar(require("./groupContext/getGroupContextCategoryList"), exports);
 __exportStar(require("./groupContext/getGroupContextGroupList"), exports);
 __exportStar(require("./groupContext/getGroupContextGroupRead"), exports);
@@ -55,6 +56,7 @@ __exportStar(require("./room/AddRooms"), exports);
 //MARK: Endpoint:
 __exportStar(require("./endpoint/getEndpointTimeSeries"), exports);
 __exportStar(require("./endpoint/postUpdateEndpoint"), exports);
+__exportStar(require("./endpoint/postTimeSeriesReadMultiple"), exports);
 //MARK: Equipment:
 __exportStar(require("./equipment/postEquipmentPositionMultiple"), exports);
 __exportStar(require("./equipment/posts/getEquipmentReadStaticDetailsMultiple"), exports);
@@ -92,6 +94,8 @@ __exportStar(require("./node/postNodeParentByRelation"), exports);
 __exportStar(require("./node/postNodeParentsMultiple"), exports);
 __exportStar(require("./node/postNodeChildrenMultiple"), exports);
 __exportStar(require("./node/postNodeContextChildrenMultiple"), exports);
+__exportStar(require("./node/postControlEndpointListMultiple"), exports);
+__exportStar(require("./node/postEndpointListMultiple"), exports);
 //MARK: Ticket
 __exportStar(require("./ticket/createTicket"), exports);
 __exportStar(require("./ticket/getTicketDetails"), exports);

@@ -9,10 +9,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getEndpointTimeSeries = getEndpointTimeSeries;
+exports.postTimeSeriesReadMultiple = postTimeSeriesReadMultiple;
 const spinalAPI_1 = require("../../spinalAPI");
-function getEndpointTimeSeries(endpointId_1, begin_1, end_1) {
-    return __awaiter(this, arguments, void 0, function* (endpointId, begin, end, options = {}) {
+function postTimeSeriesReadMultiple(buildingId_1, endpointIds_1, start_1, end_1) {
+    return __awaiter(this, arguments, void 0, function* (buildingId, endpointIds, start, end, options = {}) {
         const spinalAPI = spinalAPI_1.SpinalAPI.getInstance();
         const params = new URLSearchParams();
         if (options.valueAtBegin !== undefined)
@@ -22,10 +22,9 @@ function getEndpointTimeSeries(endpointId_1, begin_1, end_1) {
         if (options.bucket !== undefined)
             params.append("bucket", options.bucket);
         const query = params.toString() ? `?${params.toString()}` : "";
-        const path = `api/v1/endpoint/${endpointId}/timeSeries/read/${encodeURIComponent(begin)}/${encodeURIComponent(end)}${query}`;
-        const url = spinalAPI.createUrlWithPlatformId(endpointId, path);
-        const result = yield spinalAPI.get(url);
-        return result.data;
+        const url = spinalAPI.createUrlWithPlatformId(buildingId, `api/v1/endpoint/timeSeries/read_multiple/${encodeURIComponent(start)}/${encodeURIComponent(end)}${query}`);
+        const response = yield spinalAPI.post(url, endpointIds);
+        return response.data;
     });
 }
-//# sourceMappingURL=getEndpointTimeSeries.js.map
+//# sourceMappingURL=postTimeSeriesReadMultiple.js.map

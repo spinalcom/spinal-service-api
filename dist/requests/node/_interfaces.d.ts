@@ -61,3 +61,27 @@ export interface INodeFileItem {
     dynamicId: number;
     Name: string;
 }
+export interface IControlEndpointItem {
+    dynamicId: number;
+    staticId: string;
+    name: string;
+    type: string;
+    currentValue?: number | string | boolean | null;
+    unit?: string;
+}
+export interface INodeControlEndpointListMultiple {
+    dynamicId: number;
+    endpoints: IControlEndpointItem[];
+}
+export interface IEndpointItem {
+    dynamicId: number;
+    staticId: string;
+    name: string;
+    type: string;
+    currentValue?: number | string | boolean | null;
+    unit?: string;
+}
+export interface INodeEndpointListMultiple {
+    dynamicId: number;
+    endpoints: IEndpointItem[];
+}

@@ -9,23 +9,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getEndpointTimeSeries = getEndpointTimeSeries;
+exports.getGroupContextList = getGroupContextList;
 const spinalAPI_1 = require("../../spinalAPI");
-function getEndpointTimeSeries(endpointId_1, begin_1, end_1) {
-    return __awaiter(this, arguments, void 0, function* (endpointId, begin, end, options = {}) {
+function getGroupContextList(buildingId) {
+    return __awaiter(this, void 0, void 0, function* () {
         const spinalAPI = spinalAPI_1.SpinalAPI.getInstance();
-        const params = new URLSearchParams();
-        if (options.valueAtBegin !== undefined)
-            params.append("valueAtBegin", String(options.valueAtBegin));
-        if (options.aggregation !== undefined)
-            params.append("aggregation", options.aggregation);
-        if (options.bucket !== undefined)
-            params.append("bucket", options.bucket);
-        const query = params.toString() ? `?${params.toString()}` : "";
-        const path = `api/v1/endpoint/${endpointId}/timeSeries/read/${encodeURIComponent(begin)}/${encodeURIComponent(end)}${query}`;
-        const url = spinalAPI.createUrlWithPlatformId(endpointId, path);
+        const url = spinalAPI.createUrlWithPlatformId(buildingId, `api/v1/groupContext/list`);
         const result = yield spinalAPI.get(url);
         return result.data;
     });
 }
-//# sourceMappingURL=getEndpointTimeSeries.js.map
+//# sourceMappingURL=getGroupContextList.js.map
