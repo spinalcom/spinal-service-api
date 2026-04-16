@@ -1,6 +1,7 @@
 export * from "./BIM/postGetBimObjectInfo";
 export * from "./BIM/getBIMFileContext";
 export * from "./building/getBuildingRead";
+export * from "./building/postBuildingInventory";
 export * from "./context/getContextList";
 export * from "./groupContext/getGroupContextCategoryList";
 export * from "./groupContext/getGroupContextGroupList";

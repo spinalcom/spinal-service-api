@@ -4,6 +4,8 @@ export * from "./BIM/getBIMFileContext";
 
 //MARK: Building
 export * from "./building/getBuildingRead";
+export * from "./building/postBuildingInventory";
+
 
 //MARK: Context
 export * from "./context/getContextList";

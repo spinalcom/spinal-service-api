@@ -19,6 +19,7 @@ __exportStar(require("./BIM/postGetBimObjectInfo"), exports);
 __exportStar(require("./BIM/getBIMFileContext"), exports);
 //MARK: Building
 __exportStar(require("./building/getBuildingRead"), exports);
+__exportStar(require("./building/postBuildingInventory"), exports);
 //MARK: Context
 __exportStar(require("./context/getContextList"), exports);
 //MARK: GroupContext
