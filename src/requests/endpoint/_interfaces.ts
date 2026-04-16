@@ -27,6 +27,12 @@ export interface ITimeSeriesPoint {
   value: number;
 }
 
+export interface ITimeSeriesOptions {
+  aggregation?: string;
+  bucket?: string;
+  valueAtBegin?: boolean;
+}
+
 export interface ITimeSeriesBucket {
   /** ISO date string for the bucket start */
   date: string;
