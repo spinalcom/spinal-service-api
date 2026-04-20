@@ -19,3 +19,10 @@ export interface IGroupAddParam {
     groupColor: string;
     groupIcon: string;
 }
+export interface ICategoryUpdateParam {
+    newNameCategory: string;
+    newNameIcon: string;
+}
+export interface IContextUpdateParam {
+    newContextName: string;
+}
