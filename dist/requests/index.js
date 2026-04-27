@@ -34,8 +34,10 @@ __exportStar(require("./groupContext/PostAddGroup"), exports);
 __exportStar(require("./groupContext/PostUnassignItems"), exports);
 __exportStar(require("./groupContext/deleteGroupContext"), exports);
 __exportStar(require("./groupContext/deleteGroupContextCategory"), exports);
+__exportStar(require("./groupContext/deleteGroupContextGroup"), exports);
 __exportStar(require("./groupContext/PostUpdateContext"), exports);
 __exportStar(require("./groupContext/PostUpdateCategory"), exports);
+__exportStar(require("./groupContext/PostUpdateGroup"), exports);
 //MARK: Floor
 __exportStar(require("./floor/getFloorList"), exports);
 __exportStar(require("./floor/postFloorInventory"), exports);

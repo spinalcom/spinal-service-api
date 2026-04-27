@@ -57,6 +57,11 @@ export interface ICategoryUpdateParam {
   newNameIcon: string;
 }
 
+export interface IGroupUpdateParam {
+  newNameGroup: string;
+  newNameColor: string;
+}
+
 export interface IContextUpdateParam {
   newContextName: string;
 }

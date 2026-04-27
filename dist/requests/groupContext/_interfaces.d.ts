@@ -23,6 +23,10 @@ export interface ICategoryUpdateParam {
     newNameCategory: string;
     newNameIcon: string;
 }
+export interface IGroupUpdateParam {
+    newNameGroup: string;
+    newNameColor: string;
+}
 export interface IContextUpdateParam {
     newContextName: string;
 }

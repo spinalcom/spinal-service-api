@@ -23,8 +23,10 @@ export * from "./groupContext/PostAddGroup";
 export * from "./groupContext/PostUnassignItems";
 export * from "./groupContext/deleteGroupContext";
 export * from "./groupContext/deleteGroupContextCategory";
+export * from "./groupContext/deleteGroupContextGroup";
 export * from "./groupContext/PostUpdateContext";
 export * from "./groupContext/PostUpdateCategory";
+export * from "./groupContext/PostUpdateGroup";
 
 //MARK: Floor
 export * from "./floor/getFloorList";
@@ -129,7 +131,6 @@ export * from "./analysis/getAnalysisTriggerTypes";
 export * from "./analysis/getAnalyticsByContexts";
 export * from "./analysis/postAnalysticsByContexts";
 export * from "./analysis/postContexts";
-
 
 
 
