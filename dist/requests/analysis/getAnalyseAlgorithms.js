@@ -9,9 +9,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getAnalyseAlgorithms = getAnalyseAlgorithms;
+exports.getAnalyseAlgorithms = void 0;
+exports.getAnalysisAlgorithms = getAnalysisAlgorithms;
 const spinalAPI_1 = require("../../spinalAPI"); // chemin relatif à src/requests/building
-function getAnalyseAlgorithms(buildingId) {
+function getAnalysisAlgorithms(buildingId) {
     return __awaiter(this, void 0, void 0, function* () {
         const spinalAPI = spinalAPI_1.SpinalAPI.getInstance();
         const url = spinalAPI.createUrlWithPlatformId(buildingId, '/api/v1/analysis/algorithms');
@@ -25,4 +26,5 @@ function getAnalyseAlgorithms(buildingId) {
         }
     });
 }
+exports.getAnalyseAlgorithms = getAnalysisAlgorithms;
 //# sourceMappingURL=getAnalyseAlgorithms.js.map

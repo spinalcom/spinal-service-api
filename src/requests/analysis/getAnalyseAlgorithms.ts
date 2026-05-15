@@ -2,7 +2,7 @@
 import { SpinalAPI } from "../../spinalAPI"; // chemin relatif à src/requests/building
 import { INodeItem } from "./_interfaces";
 
-export async function getAnalyseAlgorithms(buildingId: string): Promise<INodeItem[]> {
+export async function getAnalysisAlgorithms(buildingId: string): Promise<INodeItem[]> {
     const spinalAPI = SpinalAPI.getInstance();
     const url = spinalAPI.createUrlWithPlatformId(buildingId, '/api/v1/analysis/algorithms');
     try {
@@ -13,3 +13,5 @@ export async function getAnalyseAlgorithms(buildingId: string): Promise<INodeIte
         throw error;
     }
 }
+
+export const getAnalyseAlgorithms = getAnalysisAlgorithms;
