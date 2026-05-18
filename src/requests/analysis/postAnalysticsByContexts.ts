@@ -3,7 +3,7 @@ import { IAnalysisAnalyticsCreateParam } from "./_interfaces";
 
 export async function postAnalysticsByContexts(
     buildingId: string,
-    contextId: number,
+    contextId: string | number,
     params: IAnalysisAnalyticsCreateParam
 ): Promise<any> {
     try {
@@ -20,3 +20,5 @@ export async function postAnalysticsByContexts(
         throw error;
     }
 }
+
+export const postAnalyticsByContexts = postAnalysticsByContexts;

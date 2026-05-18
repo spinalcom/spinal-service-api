@@ -9,16 +9,15 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.postAnalyticsByContexts = void 0;
-exports.postAnalysticsByContexts = postAnalysticsByContexts;
+exports.deleteAnalysisAnalytic = void 0;
+exports.deleteAnalytic = deleteAnalytic;
 const spinalAPI_1 = require("../../spinalAPI");
-function postAnalysticsByContexts(buildingId, contextId, params) {
+function deleteAnalytic(buildingId, analyticId) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const spinalApi = spinalAPI_1.SpinalAPI.getInstance();
-            const url = spinalApi.createUrlWithPlatformId(buildingId, `api/v1/analysis/contexts/${contextId}/analytics`);
-            const body = params;
-            const response = yield spinalApi.post(url, body);
+            const url = spinalApi.createUrlWithPlatformId(buildingId, `api/v1/analysis/analytics/${analyticId}`);
+            const response = yield spinalApi.delete(url);
             return response.data;
         }
         catch (error) {
@@ -26,5 +25,5 @@ function postAnalysticsByContexts(buildingId, contextId, params) {
         }
     });
 }
-exports.postAnalyticsByContexts = postAnalysticsByContexts;
-//# sourceMappingURL=postAnalysticsByContexts.js.map
+exports.deleteAnalysisAnalytic = deleteAnalytic;
+//# sourceMappingURL=deleteAnalytic.js.map
