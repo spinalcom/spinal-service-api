@@ -25,6 +25,8 @@ function postBuildingInventory(body, options) {
             params.append("includeUnassignedItems", String(options.includeUnassignedItems));
         if (options.onlyDynamicId !== undefined)
             params.append("onlyDynamicId", String(options.onlyDynamicId));
+        if (options.onlyCounts !== undefined)
+            params.append("onlyCounts", String(options.onlyCounts));
         try {
             const response = yield spinalAPI.post(`${url}?${params.toString()}`, body);
             return response.data;
