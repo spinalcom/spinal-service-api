@@ -4,6 +4,14 @@ export interface INodeItem {
     name: string;
     type: string;
 }
+export interface INodeReadMultipleOptions {
+    includeChildrenRelations?: boolean;
+    includeParentRelations?: boolean;
+}
+export interface INodeReadMultipleItem extends INodeItem {
+    childrenRelations?: unknown[];
+    parentRelations?: unknown[];
+}
 export type IWorkflowItem = IWorkflowItemItem[];
 export type INodeFileList = INodeFileItem[];
 export interface IWorkflowItemItem {

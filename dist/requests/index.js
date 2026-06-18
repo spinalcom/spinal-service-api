@@ -96,6 +96,7 @@ __exportStar(require("./node/postDownloadFile"), exports);
 __exportStar(require("./node/getFileList"), exports);
 __exportStar(require("./node/getNoteList"), exports);
 __exportStar(require("./node/postNodeChildren"), exports);
+__exportStar(require("./node/postNodeMultiple"), exports);
 __exportStar(require("./node/postNodeParentByRelation"), exports);
 __exportStar(require("./node/postNodeParentsMultiple"), exports);
 __exportStar(require("./node/postNodeChildrenMultiple"), exports);

@@ -69,6 +69,7 @@ export * from "./node/postDownloadFile";
 export * from "./node/getFileList";
 export * from "./node/getNoteList";
 export * from "./node/postNodeChildren";
+export * from "./node/postNodeMultiple";
 export * from "./node/postNodeParentByRelation";
 export * from "./node/postNodeParentsMultiple";
 export * from "./node/postNodeChildrenMultiple";
