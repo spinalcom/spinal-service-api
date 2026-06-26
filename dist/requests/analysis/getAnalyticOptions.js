@@ -12,10 +12,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getAnalysisAnalyticOptions = void 0;
 exports.getAnalyticOptions = getAnalyticOptions;
 const spinalAPI_1 = require("../../spinalAPI");
-function getAnalyticOptions(buildingId) {
+function getAnalyticOptions() {
     return __awaiter(this, void 0, void 0, function* () {
         const spinalApi = spinalAPI_1.SpinalAPI.getInstance();
-        const url = spinalApi.createUrlWithPlatformId(buildingId, "api/v1/analysis/analyticOptions");
+        const url = spinalApi.createUrl("api/v1/analysis/analyticOptions");
         const response = yield spinalApi.get(url);
         return response.data;
     });

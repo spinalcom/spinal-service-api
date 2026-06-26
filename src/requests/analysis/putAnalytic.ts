@@ -5,13 +5,11 @@ import {
 } from "./_interfaces";
 
 export async function putAnalytic(
-  buildingId: string,
   analyticId: string | number,
   params: IAnalysisAnalyticUpdateParam
 ): Promise<IAnalysisAnalytic> {
   const spinalApi = SpinalAPI.getInstance();
-  const url = spinalApi.createUrlWithPlatformId(
-    buildingId,
+  const url = spinalApi.createUrl(
     `api/v1/analysis/analytics/${analyticId}`
   );
   const response = await spinalApi.put<IAnalysisAnalytic>(url, params);
