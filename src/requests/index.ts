@@ -127,15 +127,16 @@ export * from "./attriubte/postUpdateAttributeMultiple";
 //MARK : Analysis
 export * from "./analysis/getAnalyseAlgorithms";
 export * from "./analysis/getAnalyseAnalytics";
+export * from "./analysis/getAnalytic";
+export * from "./analysis/getAnalyticOptions";
 export * from "./analysis/getAnalyseContextsList";
 export * from "./analysis/getAnalysisTriggerTypes";
 export * from "./analysis/getAnalyticsByContexts";
 export * from "./analysis/deleteAnalytic";
+export * from "./analysis/putAnalytic";
 export * from "./analysis/postExecuteAnalytic";
 export * from "./analysis/postAnalysticsByContexts";
 export * from "./analysis/postContexts";
-
-
 
 
 

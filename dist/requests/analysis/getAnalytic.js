@@ -9,13 +9,16 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getAnalysisAnalytics = void 0;
-exports.getAnalyseAnalytics = getAnalyseAnalytics;
-const getAnalytic_1 = require("./getAnalytic");
-function getAnalyseAnalytics(buildingId, analyticId) {
+exports.getAnalysisAnalytic = void 0;
+exports.getAnalytic = getAnalytic;
+const spinalAPI_1 = require("../../spinalAPI");
+function getAnalytic(buildingId, analyticId) {
     return __awaiter(this, void 0, void 0, function* () {
-        return (0, getAnalytic_1.getAnalytic)(buildingId, analyticId);
+        const spinalApi = spinalAPI_1.SpinalAPI.getInstance();
+        const url = spinalApi.createUrlWithPlatformId(buildingId, `api/v1/analysis/analytics/${analyticId}`);
+        const response = yield spinalApi.get(url);
+        return response.data;
     });
 }
-exports.getAnalysisAnalytics = getAnalyseAnalytics;
-//# sourceMappingURL=getAnalyseAnalytics.js.map
+exports.getAnalysisAnalytic = getAnalytic;
+//# sourceMappingURL=getAnalytic.js.map
