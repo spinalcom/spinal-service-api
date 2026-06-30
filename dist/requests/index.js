@@ -120,6 +120,8 @@ __exportStar(require("./workflow/getWorkflowStepList"), exports);
 __exportStar(require("./workflow/getWorkflowTree"), exports);
 //MARK: Attribute
 __exportStar(require("./attriubte/postUpdateAttributeMultiple"), exports);
+//MARK: Relation
+__exportStar(require("./relation/getRelationParentNode"), exports);
 //MARK : Analysis
 __exportStar(require("./analysis/getAnalyseAlgorithms"), exports);
 __exportStar(require("./analysis/getAnalyseAnalytics"), exports);

@@ -90,6 +90,7 @@ export * from "./workflow/getWorkflowProcessList";
 export * from "./workflow/getWorkflowStepList";
 export * from "./workflow/getWorkflowTree";
 export * from "./attriubte/postUpdateAttributeMultiple";
+export * from "./relation/getRelationParentNode";
 export * from "./analysis/getAnalyseAlgorithms";
 export * from "./analysis/getAnalyseAnalytics";
 export * from "./analysis/getAnalytic";

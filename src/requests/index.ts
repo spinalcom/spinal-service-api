@@ -124,6 +124,9 @@ export * from "./workflow/getWorkflowTree";
 //MARK: Attribute
 export * from "./attriubte/postUpdateAttributeMultiple";
 
+//MARK: Relation
+export * from "./relation/getRelationParentNode";
+
 //MARK : Analysis
 export * from "./analysis/getAnalyseAlgorithms";
 export * from "./analysis/getAnalyseAnalytics";
@@ -138,7 +141,6 @@ export * from "./analysis/putAnalytic";
 export * from "./analysis/postExecuteAnalytic";
 export * from "./analysis/postAnalysticsByContexts";
 export * from "./analysis/postContexts";
-
 
 
 
