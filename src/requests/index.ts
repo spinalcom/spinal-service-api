@@ -133,11 +133,11 @@ export * from "./analysis/getAnalyseContextsList";
 export * from "./analysis/getAnalysisTriggerTypes";
 export * from "./analysis/getAnalyticsByContexts";
 export * from "./analysis/deleteAnalytic";
+export * from "./analysis/patchAnalytic";
 export * from "./analysis/putAnalytic";
 export * from "./analysis/postExecuteAnalytic";
 export * from "./analysis/postAnalysticsByContexts";
 export * from "./analysis/postContexts";
-
 
 
 

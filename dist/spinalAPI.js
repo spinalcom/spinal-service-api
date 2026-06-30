@@ -70,6 +70,7 @@ class SpinalAPI {
         this.get = (url, config) => this.axiosInstance.get(url, config);
         this.post = (url, data, config) => this.axiosInstance.post(url, data, config);
         this.put = (url, data, config) => this.axiosInstance.put(url, data, config);
+        this.patch = (url, data, config) => this.axiosInstance.patch(url, data, config);
         this.delete = (url, config) => this.axiosInstance.delete(url, config);
         this.baseURL = _apiUrl !== null && _apiUrl !== void 0 ? _apiUrl : "";
         // Crée l’instance axios ici (et pas en field initializer)

@@ -148,6 +148,8 @@ export class SpinalAPI {
     this.axiosInstance.post<T>(url, data, config);
   public put = <T = any>(url: string, data?: any, config?: AxiosRequestConfig) =>
     this.axiosInstance.put<T>(url, data, config);
+  public patch = <T = any>(url: string, data?: any, config?: AxiosRequestConfig) =>
+    this.axiosInstance.patch<T>(url, data, config);
   public delete = <T = any>(url: string, config?: AxiosRequestConfig) =>
     this.axiosInstance.delete<T>(url, config);
 

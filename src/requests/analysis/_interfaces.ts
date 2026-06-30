@@ -72,6 +72,13 @@ export interface IAnalysisAnalyticUpdateParam {
   [key: string]: unknown;
 }
 
+export interface IAnalysisAnalyticPatchParam {
+  analysisName?: string;
+  description?: string;
+  concurrency?: Record<string, unknown>;
+  status?: string;
+}
+
 export interface IAnalysisAnalyticOptionField {
   name: string;
   type: string;

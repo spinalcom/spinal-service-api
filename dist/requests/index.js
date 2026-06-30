@@ -129,6 +129,7 @@ __exportStar(require("./analysis/getAnalyseContextsList"), exports);
 __exportStar(require("./analysis/getAnalysisTriggerTypes"), exports);
 __exportStar(require("./analysis/getAnalyticsByContexts"), exports);
 __exportStar(require("./analysis/deleteAnalytic"), exports);
+__exportStar(require("./analysis/patchAnalytic"), exports);
 __exportStar(require("./analysis/putAnalytic"), exports);
 __exportStar(require("./analysis/postExecuteAnalytic"), exports);
 __exportStar(require("./analysis/postAnalysticsByContexts"), exports);

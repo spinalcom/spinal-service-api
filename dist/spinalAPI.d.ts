@@ -30,6 +30,7 @@ export declare class SpinalAPI {
     get: <T = any>(url: string, config?: AxiosRequestConfig) => Promise<import("axios").AxiosResponse<T, any, {}>>;
     post: <T = any>(url: string, data?: any, config?: AxiosRequestConfig) => Promise<import("axios").AxiosResponse<T, any, {}>>;
     put: <T = any>(url: string, data?: any, config?: AxiosRequestConfig) => Promise<import("axios").AxiosResponse<T, any, {}>>;
+    patch: <T = any>(url: string, data?: any, config?: AxiosRequestConfig) => Promise<import("axios").AxiosResponse<T, any, {}>>;
     delete: <T = any>(url: string, config?: AxiosRequestConfig) => Promise<import("axios").AxiosResponse<T, any, {}>>;
     createIteratorCall<K extends (...args: any[]) => any>(fct: K, ...args: Parameters<K>): AsyncGenerator<Awaited<ReturnType<K>>>;
 }
