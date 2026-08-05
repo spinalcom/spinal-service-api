@@ -141,6 +141,11 @@ export * from "./analysis/putAnalytic";
 export * from "./analysis/postExecuteAnalytic";
 export * from "./analysis/postAnalysticsByContexts";
 export * from "./analysis/postContexts";
+export * from "./analysis/getOrganAssignments";
+export * from "./analysis/getOrganAssignment";
+export * from "./analysis/putOrganAssignment";
+export * from "./analysis/postAssignAnalytic";
+export * from "./analysis/deleteAssignAnalytic";
 
 
 

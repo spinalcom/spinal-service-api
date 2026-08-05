@@ -97,3 +97,41 @@ export interface IAnalysisExecuteResponse {
         analysisModuleVersion: string;
     };
 }
+/**
+ * One organ's assignment record. `enabled=false` (or `exists=false`) means the organ runs
+ * ALL active analyses; when enabled, it runs only the analyses whose id is in `analytics`.
+ */
+export interface IAnalysisOrganAssignment {
+    organName: string;
+    /** Whether an assignment file exists for this organ (false ⇒ synthesized run-all defaults). */
+    exists: boolean;
+    enabled: boolean;
+    analytics: string[];
+    analyticsCount: number;
+}
+export interface IAnalysisOrgansListResponse {
+    data: IAnalysisOrganAssignment[];
+    meta: {
+        analysisModuleVersion: string;
+    };
+}
+export interface IAnalysisOrganAssignmentResponse {
+    data: IAnalysisOrganAssignment;
+    meta: {
+        analysisModuleVersion: string;
+    };
+}
+export interface IAnalysisOrganAssignmentSetParam {
+    enabled?: boolean;
+    analytics?: string[];
+}
+/** Response for assign (POST) / unassign (DELETE) — carries whether the list actually changed. */
+export interface IAnalysisOrganAssignmentMutationResponse {
+    data: IAnalysisOrganAssignment & {
+        added?: boolean;
+        removed?: boolean;
+    };
+    meta: {
+        analysisModuleVersion: string;
+    };
+}

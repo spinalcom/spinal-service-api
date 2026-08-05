@@ -136,4 +136,9 @@ __exportStar(require("./analysis/putAnalytic"), exports);
 __exportStar(require("./analysis/postExecuteAnalytic"), exports);
 __exportStar(require("./analysis/postAnalysticsByContexts"), exports);
 __exportStar(require("./analysis/postContexts"), exports);
+__exportStar(require("./analysis/getOrganAssignments"), exports);
+__exportStar(require("./analysis/getOrganAssignment"), exports);
+__exportStar(require("./analysis/putOrganAssignment"), exports);
+__exportStar(require("./analysis/postAssignAnalytic"), exports);
+__exportStar(require("./analysis/deleteAssignAnalytic"), exports);
 //# sourceMappingURL=index.js.map
