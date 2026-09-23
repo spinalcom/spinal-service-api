@@ -63,6 +63,7 @@ __exportStar(require("./room/AddRooms"), exports);
 __exportStar(require("./endpoint/getEndpointTimeSeries"), exports);
 __exportStar(require("./endpoint/postUpdateEndpoint"), exports);
 __exportStar(require("./endpoint/postTimeSeriesReadMultiple"), exports);
+__exportStar(require("./endpoint/postTimeSeriesReadCurrentDay_multiple"), exports);
 //MARK: Equipment:
 __exportStar(require("./equipment/postEquipmentPositionMultiple"), exports);
 __exportStar(require("./equipment/posts/getEquipmentReadStaticDetailsMultiple"), exports);

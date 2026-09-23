@@ -57,7 +57,7 @@ export * from "./room/AddRooms";
 export * from "./endpoint/getEndpointTimeSeries";
 export * from "./endpoint/postUpdateEndpoint";
 export * from "./endpoint/postTimeSeriesReadMultiple";
-
+export * from "./endpoint/postTimeSeriesReadCurrentDay_multiple";
 
 //MARK: Equipment:
 export * from "./equipment/postEquipmentPositionMultiple";
