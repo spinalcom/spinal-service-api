@@ -14,7 +14,7 @@ const spinalAPI_1 = require("../../spinalAPI");
 const postTimeSeriesReadCurrentDayMultiple = (buildingId, endpoints) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const spinalAPI = spinalAPI_1.SpinalAPI.getInstance();
-        const url = spinalAPI.createUrlWithPlatformId(buildingId, 'api/v1/endpoints/timeSeries/readCurrentDay_multiple');
+        const url = spinalAPI.createUrlWithPlatformId(buildingId, 'api/v1/endpoint/timeSeries/readCurrentDay_multiple');
         const result = yield spinalAPI.post(url, endpoints);
         return result.data;
     }
