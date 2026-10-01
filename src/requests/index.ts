@@ -147,6 +147,10 @@ export * from "./analysis/putOrganAssignment";
 export * from "./analysis/postAssignAnalytic";
 export * from "./analysis/deleteAssignAnalytic";
 
+//MARK:User Group
+export * from "./userGroup/postSnapshotNodes";
+export * from './userGroup/_interface';
+
 
 
 

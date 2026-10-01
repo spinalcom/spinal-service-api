@@ -110,3 +110,5 @@ export * from "./analysis/getOrganAssignment";
 export * from "./analysis/putOrganAssignment";
 export * from "./analysis/postAssignAnalytic";
 export * from "./analysis/deleteAssignAnalytic";
+export * from "./userGroup/postSnapshotNodes";
+export * from './userGroup/_interface';

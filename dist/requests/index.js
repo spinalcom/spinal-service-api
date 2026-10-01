@@ -142,4 +142,7 @@ __exportStar(require("./analysis/getOrganAssignment"), exports);
 __exportStar(require("./analysis/putOrganAssignment"), exports);
 __exportStar(require("./analysis/postAssignAnalytic"), exports);
 __exportStar(require("./analysis/deleteAssignAnalytic"), exports);
+//MARK:User Group
+__exportStar(require("./userGroup/postSnapshotNodes"), exports);
+__exportStar(require("./userGroup/_interface"), exports);
 //# sourceMappingURL=index.js.map
